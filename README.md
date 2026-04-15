@@ -178,10 +178,10 @@ PSiLU draws inspiration from several lines of research:
 
 <img width="2300" height="1438" alt="psilu_analysis" src="https://github.com/user-attachments/assets/af16cc80-d065-4cb3-ab92-2d8a216dbbe6" />
 
-| Activation | Final Loss | Final Accuracy | Best Accuracy | Parameters |
+| Activation | Final Test Loss | Final Accuracy | Best Accuracy | Parameters |
 | :--- | :---: | :---: | :---: | :---: |
-| **PSiLU** | **0.5091** | 89.05% | **89.28%** (E29) | +0.3% |
-| GELU | 0.5088 | 88.65% | 89.22% (E13) | baseline |
+| **PSiLU** | 0.5091 | 89.05% | **89.28%** (E29) | +0.3% |
+| GELU | **0.5088** | 88.65% | 89.22% (E13) | baseline |
 | Swish | 0.5548 | **89.13%** | 89.27% (E26) | baseline |
 
 ### 4.3 Preliminary Observations
