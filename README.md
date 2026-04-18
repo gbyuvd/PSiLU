@@ -362,6 +362,7 @@ Empirical analysis compares initialization strategies in shallow MLPs:
 ### 3.8 Signal Propagation in Deep Networks
 
 **3.8.1 Plain MLP (No Residual Connections)**
+
 **Setup:** 20 layers, width=256.
 <img width="1677" height="643" alt="Pasted image 20260416175439" src="https://github.com/user-attachments/assets/732b2c7d-1538-40c9-ad60-4f1465690f36" />
 
@@ -387,7 +388,9 @@ Empirical analysis compares initialization strategies in shallow MLPs:
 | **PSiLU-stratified** | **32,974**                | **~1.4× per layer**    |
 | PSiLU-normal         | 30,712                    | ~1.4× per layer        |
 
-**Residual MLP:** Residual connections cause variance explosion ($Var(y) \approx Var(x) + Var(f(x))$).
+**3.8.2 Residual MLP**
+
+Residual connections cause variance explosion ($Var(y) \approx Var(x) + Var(f(x))$).
 - ReLU explodes fastest (all neurons active).
 - PSiLU-stratified explodes slowest because it includes "Always-off" channels where $f(x) \approx 0$, making those residual blocks act closer to identity maps.
 
