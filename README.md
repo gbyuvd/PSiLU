@@ -530,7 +530,7 @@ This document is provided as a technical resource for the community. If the char
 
 ```bibtex
 @misc{psilu2026,
-  title = {PSiLU: Parametric Sigmoid Linear Unit},
+  title = {PSiLU: Parametric Sigmoid Linear Unit: A Characterization},
   author = {[GP Bayu]},
   year = {2026},
   howpublished = {\url{https://github.com/gbyuvd/PSiLU}},
